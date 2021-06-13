@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Unica One', sans-serif;
+    background: #111111;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 5rem;
+    flex-direction: column;
+  }
+  
+  .heading {
+    color: #eee;
+    font-size: 5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  /* Por defecto, el elemento <input> del DOM que tiene id=num NO se va renderizar en nuestro Render Tree.
+
+      Mas info acerca de como se renderiza el DOM en los navegadores:
+      https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model
+  
+  */
+  #num{
+    display: none;
+  }
